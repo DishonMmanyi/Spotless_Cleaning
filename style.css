@@ -1,0 +1,117 @@
+/* Header and header items styling */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+header {
+    position: relative;
+    height: 65vh;
+    background-color: #00539C;
+    color: white;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('/images/header-image.avif');
+    background-size: cover;
+    opacity: 0.2;
+}
+header h1,h3 {
+    width: 50vw;
+}
+
+header h1 {
+    position: relative;
+    left: 5%;
+    bottom: 20%;
+    font-size: 350%;
+}
+
+header h3 {
+    position: relative;
+    top: 10%;
+    left: 5%;
+    font-size: 200%;
+
+}
+
+.company-contact {
+    position: relative;
+    width: 30%;
+    left: 65%;
+    display: flex;
+    gap: 10%;
+}
+
+p i {
+    margin-right: 5px; 
+    color: #FFD662;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: row;
+}
+nav {
+    width: 50vw;
+    position: relative;
+    left: 45%;
+}
+.nav-items {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Remove default styling for anchor tags */
+nav a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color from parent element */
+}
+
+nav a:hover {
+    color: #FFD662;
+    transition: color 0.4s linear;
+
+}
+
+
+header form {
+    width: 30%;
+    position: relative;
+    left: 60%;
+    bottom: 25%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, .3);;
+}
+
+.cta-button {
+    position: relative;
+    left: 5%;
+    bottom: 40%;
+}
+
+.cta-button {
+    padding: 20px 50px;
+    border-radius: 10px;
+    border-width: 0;
+    color: #00539C;
+    font-size: larger;
+}
+
+button:hover {
+    background-color: #FFD662;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+
